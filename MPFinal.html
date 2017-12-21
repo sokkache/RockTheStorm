@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Sunny Send</title>
+</head>
+<style>
+body {
+	background: Purple;
+	color: white
+}
+
+div {
+
+
+
+</style>
+<body style="text-align:center;">
+<div class = "boxed">
+<h1>Areas and Routes to Climb:</h1>
+<h2> Areas: </h2>
+{% for area in areasList %}
+{{area}}
+<br>
+{% endfor %}
+********************************************
+<br>
+<h2> Possible routes: </h2>
+	{% for route in finalRoutes %}
+	Route Name: {{route.name}}
+	<br>
+	Route Area = {{route.area}}
+	<br>
+	Route Rating = {{route.rating}}
+	<br>
+	Route Type = {{route.type}}
+	<br>
+	<p>Route url = <a href = {{route.url}} text-align = center> {{route.name}} </a> &nbsp &nbsp &nbsp <img src="{{route.image}}"></p>
+	<br>
+	Route pitches = {{route.pitch}}
+	<br>
+	_________________________________
+	<br>
+	<br>
+	{% endfor %}
+</div>
+</body>
+</html>

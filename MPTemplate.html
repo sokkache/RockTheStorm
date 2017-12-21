@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>{{page_title}}</title>
+</head>
+<style>
+body {
+	background: Purple;
+	color: white;
+	text-align: center;
+}
+
+</style>
+<body>
+<div class = 'box'>
+<h1>Sunny Send</h1>
+<br>
+
+<h2>Enter your address to find routes near you:</h2>
+<form action="gresponse" method="post">
+	<label for="address">Please enter an address:</label>
+	<input type="text" id="address" name="address"/>
+	<h2> Any more additional information? </h2>
+	<label for="minDiff">Min Difficulty you would climb(5.1 - 5.15d):</label>
+	<input type="text" id="minDiff" name="minDiff"/>
+	<br>
+	<label for="maxDiff">Max Difficulty you would climb (5.1 - 5.15d):</label>
+	<input type="text" id="maxDiff" name="maxDiff"/>
+	<br>
+	<label for="maxDistance">How far are you willing to drive to find climbing (miles)?</label>
+	<input type="text" id="maxDistance" name="maxDistance"/>
+	<br>
+	<input type="submit" value="Find Routes!" name"submitbutton"/></form>
+</div>
+</body>
+</html>
